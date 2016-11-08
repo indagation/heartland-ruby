@@ -146,7 +146,7 @@ module Hps
       xml.hps :Transaction do
         xml.hps :CreditSale do
           xml.hps :Block1 do
-            xml.hps :AllowDup, "Y"
+            xml.hps :AllowDup, "N"
             xml.hps :Amt, amount
             xml << hydrate_cardholder_data(card_holder) if card_holder
             xml << hydrate_additional_txn_fields(details) if details
